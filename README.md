@@ -1,5 +1,7 @@
 # 老蒋.skill · 商业评论写作法
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](LICENSE)
+
 > **把「老蒋巨靠谱」的判断方式，整理成一套可执行的写作方法。**
 >
 > 不是学他说话，是学他怎么把一件热事拆到机制层，再落回普通人身上。
@@ -112,7 +114,7 @@ laojiang-skill/
 5. **校对**：热词提示修正专有名词（字节系、红果短剧等），半角标点转全角
 6. **提炼**：统计 + 结构骨架 + 逐篇阅读，归纳模型
 
-转写工具与完整流水线见 [ai-video-studio](https://github.com/guohuiyuan/ai-video-studio)（本地项目，未开源）。
+采集与转写只依赖公开工具（yt-dlp、faster-whisper）和 B 站公开接口，本仓库不包含音视频文件，只保留文字稿。
 
 ## 已知局限
 
@@ -124,10 +126,28 @@ laojiang-skill/
 
 ## 版权
 
-文稿版权属于原作者「老蒋巨靠谱」。本仓库仅用于个人学习与研究，不用于商业用途。
-
-如原作者认为不妥，请联系删除。
+- **文稿版权**属于原作者「老蒋巨靠谱」。本仓库仅收录其公开视频的文字转写，用于个人学习与研究，不用于商业用途。如原作者认为不妥，请联系删除。
+- **本仓库的代码与文档**（`SKILL.md`、`references/` 中的方法论章节、`data/` 中的统计产物、README 等）采用 **GNU Affero General Public License v3.0** 授权。
 
 ## License
 
-代码与文档部分 MIT。
+[AGPL-3.0](LICENSE)
+
+```
+Copyright (C) 2026 guohuiyuan
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
+选择 AGPL 而非 MIT：这是一套会被拿去直接生成内容的规则集合，AGPL 要求衍生作品（包括以网络服务形式提供）同样开源，能避免被闭源包装后再分发。
